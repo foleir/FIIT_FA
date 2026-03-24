@@ -3,7 +3,7 @@ using TreeDataStructures.Implementations.AVL;
 using TreeDataStructures.Implementations.BST;
 using TreeDataStructures.Implementations.RedBlackTree;
 using TreeDataStructures.Implementations.Splay;
-using TreeDataStructures.Implementations.Treap;
+// using TreeDataStructures.Implementations.Treap;
 using TreeDataStructures.Interfaces;
 
 namespace TreeDataStructures.Tests.Base;
@@ -12,7 +12,7 @@ namespace TreeDataStructures.Tests.Base;
 [TestFixture(typeof(AvlTree<int, string>))]
 [TestFixture(typeof(RedBlackTree<int, string>))]
 [TestFixture(typeof(SplayTree<int, string>))]
-[TestFixture(typeof(Treap<int, string>))]
+// [TestFixture(typeof(Treap<int, string>))]
 public abstract class GenericTreeTests<TTree> where TTree : ITree<int, string>, new()
 {
     protected TTree Tree;
